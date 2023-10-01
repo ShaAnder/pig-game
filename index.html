@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Main section containing all of our largest elements-->
+    <main>
+      <!-- we need two sections for players, section tags dedicate a section of the doc to the stuff in there -->
+      <!-- this section gets the parent player class, plus it's unique player id class, plus starting out the player active class -->
+      <section class="player player-0">
+        <!-- class name for manipulating all players, unique id to select later -->
+        <h2 class="name" id="name-0">Player 1</h2>
+        <!-- Same with score, class for score, unique id for this specific score later -->
+        <p class="score" id="score-0">0</p>
+        <!-- Then we make a div for our current score, unique id for the player -->
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current-0">0</p>
+        </div>
+      </section>
+      <!-- Now we're going to repeat this and remove / change some stuff to create a player 2
+      namely, we change the actual player name, remove player-active and change the id's all to -1 -->
+      <section class="player player-1">
+        <h2 class="name" id="name-1">Player 2</h2>
+
+        <p class="score" id="score-1">0</p>
+
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current-1">0</p>
+        </div>
+      </section>
+      <!-- we can even create more, for a third and a fourth player, i'll hide these for later use  -->
+      <section class="player player-2 hidden">
+        <h2 class="name" id="name-1">Player 3</h2>
+
+        <p class="score" id="score-1">0</p>
+
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current-1">0</p>
+        </div>
+      </section>
+      <section class="player player-3 hidden">
+        <h2 class="name" id="name-1">Player 4</h2>
+
+        <p class="score" id="score-1">0</p>
+
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current-1">0</p>
+        </div>
+      </section>
+      <!-- next we want to get our dice img, these are stored in our img file in the assets folder -->
+      <img
+        src="assets/img/dice/dice-5.png"
+        alt="Playing Dice"
+        class="dice hidden"
+      />
+      <!-- finally our buttons for new game, roll and hold we gove each a class to grab hold of them for styling later -->
+      <button class="btn btn-new">🔄 New game</button>
+      <button class="btn btn-roll">🎲 Roll dice</button>
+      <button class="btn btn-hold">📥 Hold</button>
+    </main>
+    <!-- also let's get our script file -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

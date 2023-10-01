@@ -1,0 +1,219 @@
+/* We Import the font family at the top, this is one we can get directly from google, so we don't need to download any packages to get it running*/
+@import url('https://fonts.googleapis.com/css2?family=Edu SA Beginner&display=swap');
+
+/* Now starting off with all, we want to reset the margin and padding so we don't have extra later on and set box sizing to inherit, so when we definie it later it doesn't need changing throughout the code more on box sizing here: https://www.w3schools.com/cssref/css3_pr_box-sizing.php*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/* Now for specifically html we're going to declare starting font size and box-sizing (which will be inherited by later code */
+html {
+  /* set this % and we can then change it later */
+  font-size: 70%;
+  /* sets our box sizing The width and height properties include the content, padding, and border, but do not include the margin */
+  box-sizing: border-box;
+}
+
+/* our main body html */
+body {
+  /* font stuff*/
+  font-family: 'Edu SA Beginner', sans-serif;
+  font-weight: 800;
+  height: 100vh;
+  color: #ffffff;
+  text-shadow: rgb(0, 0, 0) 1px 0 2px;
+  /* change the background */
+  background-image: linear-gradient(to top left, #ddaa0f 0%, #bf2e34 100%);
+  /* set our display, flex lets items lay out and then wrap as neeed and isn't as strict */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* now onto our main section, the overall part of game */
+main {
+  /* Moves an element, space left blank, content won't be adjusted to fit */
+  position: relative;
+  /* move amount */
+  width: 100rem;
+  height: 60rem;
+  /* change our bg color */
+  background-color: rgba(255, 255, 255, 0.35);
+  /* blurs behind our opaque background color */
+  backdrop-filter: blur(200px);
+  filter: blur();
+  /*create a shadow background behind our background */
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  /* hides the content and doesn't add a scroll */
+  overflow: hidden;
+  display: flex;
+}
+
+/* our main player class for all the players */
+.player {
+  /* sets all children to 50% */
+  flex: 50%;
+  padding: 9rem;
+  display: flex;
+  /* sets them to a column */
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.75s;
+}
+
+/* ELEMENTS */
+.name {
+  /* this is all to change our text and add a margin */
+  position: relative;
+  font-size: 4rem;
+  /* uppercase, space between letters and words */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.score {
+  font-size: 8rem;
+  font-weight: 300;
+  color: #ffffff;
+  /*auto tells browser to calculate the margin */
+  margin-bottom: auto;
+}
+
+/* our player classes, mainly set teh weight and current player opacity we also hide players 3 and 4 for another time*/
+.player-active {
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0rem 4rem rgba(0, 0, 0, 0.3);
+}
+
+.player-active .name {
+  font-weight: 700;
+}
+.player-active .score {
+  font-weight: 400;
+}
+
+.player-active .current {
+  opacity: 1;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Our current score */
+
+.current {
+  /* background of the current label, set a border and text */
+  background-color: #ddaa0f;
+  opacity: 0.8;
+  border-radius: 9px;
+  color: #fff;
+  width: 65%;
+  padding: 2rem;
+  text-align: center;
+  /*changes property values over given duration */
+  transition: all 0.75s;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.25);
+}
+
+/* transform our text */
+
+.current-label {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+  color: #ddd;
+}
+
+.current-score {
+  font-size: 4rem;
+}
+
+/* ABSOLUTE POSITIONED ELEMENTS */
+
+/* our buttons, for hold, roll and score */
+.btn {
+  /* set the position to absolute, it stays in place and can overlap other elements */
+  position: absolute;
+  left: 50%;
+  /* repositions along the x axis */
+  transform: translateX(-50%);
+  color: #444;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  /* sets our cursor to a pointer when hovering */
+  cursor: pointer;
+  font-weight: 400;
+  transition: all 0.2s;
+
+  /* set our bg color */
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+
+  /* set a box shadow and border */
+  padding: 0.7rem 2.5rem;
+  /* rounds our button */
+  border-radius: 50rem;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+}
+
+/* applies to the first letter first line of an element, for this out button symbols */
+.btn::first-letter {
+  font-size: 2.4rem;
+  display: inline-block;
+  margin-right: 0.7rem;
+}
+
+/* sets the top element closest to it's nearest positioned ancestor, aka this will be the closest the top is from the bottom of the next element */
+.btn-new {
+  top: 4rem;
+}
+.btn-roll {
+  top: 39.3rem;
+}
+.btn-hold {
+  top: 46.1rem;
+}
+
+/* when a button is clicked add a slight transform to create a clicking animation */
+.btn:active {
+  transform: translate(-50%, 3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+/* clears the outline when it's in focus */
+.btn:focus {
+  outline: none;
+}
+
+/* our dice */
+.dice {
+  /* absolute position so that it layers over the content */
+  position: absolute;
+  /* set our sizes and give it a shadow */
+  left: 50%;
+  top: 16.5rem;
+  transform: translateX(-50%);
+  height: 15rem;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.4);
+}
+
+/* when player wins set our changes */
+.player-winner {
+  background-color: #2f2f2f;
+}
+
+.player-winner .name {
+  font-weight: 700;
+  color: #bf2e34;
+}
