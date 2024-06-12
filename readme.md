@@ -5,7 +5,7 @@
 <h1  align="center">Pig Game</h1>
 
 <p  align="center">
-<img src="https://github.com/ShaAnder/address_book_react/assets/129494996/dd8e0d83-6509-42e0-80b5-3a1321ee1660" alt="project image" height="200px">
+<img src="https://github.com/ShaAnder/pig-game/assets/129494996/89a9aeae-1fcb-4877-9970-3ec3c154fbf6" alt="project image" height="200px">
     
 <p align="center">
   <img src="https://img.shields.io/badge/version-0.0.1-orange.svg?cacheSeconds=2592000" />
