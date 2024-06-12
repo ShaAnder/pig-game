@@ -1,44 +1,88 @@
-# PIG GAME
 
-## Table Of Contents
+<p  align="center">
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="120%">
+    
+<h1  align="center">Pig Game</h1>
 
-     [Introduction](#introduction)
-        [Why This?](#why-this?)
+<p  align="center">
+<img src="https://github.com/ShaAnder/address_book_react/assets/129494996/dd8e0d83-6509-42e0-80b5-3a1321ee1660" alt="project image" height="200px">
+    
+<p align="center">
+  <img src="https://img.shields.io/badge/version-0.0.1-orange.svg?cacheSeconds=2592000" />
+  <a href="" target="_blank">
+    <img alt="Demo" src="https://img.shields.io/badge/demo-offline-red.svg" />
+  </a>
+  <a href="https://github.com/ShaAnder/pig-game#readme" target="_blank">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+  </a>
+  <a href="https://github.com/ShaAnder/pig-game/graphs/commit-activity" target="_blank">
+    <img alt="Maintenance" src="https://img.shields.io/badge/maintained-yes-green.svg" />
+  </a>
+  <a href="https://github.com/ShaAnder/pig-game/blob/main/LICENSE" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+  </a>
+</p>
 
-    [Project Brief](#project-brief)
-        [In Depth Description](#in-depth-description)
-        [Required Parameters](#required-parameters)
-        [Working Rundown](#how-it-works)
 
-    [Learning Points & Takeaway](#learning-points-&-takeaway)
+<h2 class="header2">Description</h2>
+<p class="text-content">
+First Javascript project created as part of the complete javascript course 2023 by jonas Schmedtmann, simple pig dice game with a few additional features not present in the project. 
 
-    [Version History](#version-history)
+- Features the ability to select player via coin toss
+- Created a warmer looking ui
+- Added elements and visual ques to make seeing the winner a lot more noticble
 
-    [Misc](#misc)
+<h2>Prerequisites</h2>
 
-## Introduction
+<h4>Languages Used</h4>
+- JavaScript<br>
+- CSS3<br>
+- HTML5<br>
 
-This is my first major Javascript project from the Javascript complete course by Jonas Scmedtmann, it's a perfect example of shaocasing my skills up to and including DOM Manipulation. Originally found on [Udemy, The Javascript Complete Course by Jonas Scmedtmann](https://www.udemy.com/course/the-complete-javascript-course/),
-the project was designed to be a version of the popular pig game, i did however use it as a learning opportunity to get a deeper understanding into html / css and JS / Dom manipulation, even going so far as to add new features to the game.
+<h4>API</h4>
 
-### Why This?
+<h4>Packages</h4>
 
-It was the first project I wanted to utilize to showoff my progress with javascript and as a result one that i felt would fit on the portfolio. There is more work to be done on it in the future when i learn more but for now it's a good example of what I have learnt
+<h2>Installation</h2>
 
-## Project Brief
+First clone this repo
 
-### In Depth Description
+```sh
+git clone
+```
+NPM install to get the dependancies
 
-The project uses an HTML / CSS based GUI that take inputs in the form of strings and decides the players. It then allows the players to roll a dice to accumulate a score. And let's them keep playing until they tally the score required to win, it then allows to reset the game and go again.
+```sh
+npm install (or pip install)
+```
+Use npm start to start the local server / test the app
 
-Originally as stated the project didn't have any realy player selection and much less visual presence in some ways, so I decided to learn more about how the code works to build a warmer more noticable UI, and add more elements to showcase the winner. As well as this player selection functions
+```sh
+npm start or press run
+```
 
-## Learning Points & Takeaway
+</div>
 
-This project made me learn more about HTML and CSS as well as researching the tools needed to implement functionality outside of the intended scope.
+<h2>Contributing</h2>
 
-## Version History
+Got any issues or see any problems with the code? Check here:<br>
+[Issue Tracker](github.com/pig-game/issues)
 
-v.01 - Created base game and added extended functionality to it
+</div>
 
-## Misc
+<h2>License</h2>
+
+This Project Is MIT Licensed
+
+<h2>Credits</h2>
+- Originally A follow along from the Complete JavaScript Course by Jonas Schmedtmann, however new features were added to make for a better experience
+
+
+<h2>Contact</h2>
+
+[LinkedIn](https://www.linkedin.com/in/shaun-anderton-551670a9/)<br>
+[Twitter](https://twitter.com/ShaAnder10)<br>
+[Github](https://github.com/ShaAnder)
+
+<p  align="center">
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="120%">
